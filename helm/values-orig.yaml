@@ -70,5 +70,7 @@ jenkins:
     CredentialsXmlSecret: jenkins-credentials
     SecretsFilesSecret: jenkins-secrets
     DockerVM: false
+    GProject: idb-mobile
+    GAuthFile: key5704971169775737845.json
   rbac:
     install: true

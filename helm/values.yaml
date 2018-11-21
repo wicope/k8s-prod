@@ -22,7 +22,7 @@ chartmuseum:
       ingress.kubernetes.io/ssl-redirect: "false"
       nginx.ingress.kubernetes.io/ssl-redirect: "false"
     hosts:
-      cm.104.196.6.227.nip.io: # Change me!
+      cm.35.227.96.119.nip.io: # Change me!
       - /
 
 jenkins:
@@ -65,10 +65,12 @@ jenkins:
         ingress.kubernetes.io/ssl-redirect: "false"
         ingress.kubernetes.io/proxy-body-size: 50m
         ingress.kubernetes.io/proxy-request-buffering: "off"
-    HostName: jenkins.104.196.6.227.nip.io # Change me!
+    HostName: jenkins.35.227.96.119.nip.io # Change me!
     CustomConfigMap: true
     CredentialsXmlSecret: jenkins-credentials
     SecretsFilesSecret: jenkins-secrets
     DockerVM: false
+    GProject: idb-mobile
+    GAuthFile: key5704971169775737845.json
   rbac:
     install: true
